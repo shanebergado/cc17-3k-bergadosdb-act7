@@ -15,7 +15,7 @@
         android:textSize="20sp"
         android:layout_gravity="center_horizontal"
         android:textStyle="bold"
-        android:textColor="#0C6110"/>
+        android:textColor="#BA8E23"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/placesRecyclerView"
