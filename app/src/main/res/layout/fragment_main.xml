@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:src="@drawable/frontlogo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"/>
+
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Baguio Best "
+        android:textSize="24sp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <!-- Buttons for categories -->
+    <Button
+        android:id="@+id/kidFriendlyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kid-Friendly Places"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEE8C"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/shoppingCentersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping Centers"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFEE8C"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/restaurantsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFEE8C"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/club_and_barButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coffee Shops"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFEE8C"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/parksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parks"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FFEE8C"
+        android:textColor="@color/black"/>
+
+
+</LinearLayout>

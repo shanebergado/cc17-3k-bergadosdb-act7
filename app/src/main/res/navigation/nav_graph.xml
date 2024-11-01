@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.baguiobest.MainFragment"
+        android:label="Category"
+        tools:layout="@layout/fragment_main">
+
+        <!-- Action from mainFragment to Recommendation -->
+        <action
+            android:id="@+id/action_mainFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.example.baguiobest.CategoryFragment"
+        android:label="Recommendations"
+        tools:layout="@layout/fragment_category">
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+        <!-- Action from Recommendation to detailsFragment -->
+        <action
+            android:id="@+id/action_categoryFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.baguiobest.DetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_details">
+
+        <!-- Argument to pass place to detailsFragment -->
+        <argument
+            android:name="place"
+            app:argType="com.example.baguiobest.Place" />
+    </fragment>
+
+</navigation>
